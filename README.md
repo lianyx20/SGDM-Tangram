@@ -1,5 +1,5 @@
 # SGDM-Tangram
-Official implementation of **SGDM-Tangram** by *Yongxiang Lian* and *Yueyang Cang*.
+Official implementation of **SGDM-Tangram** by *Yongxiang Lian*, *Yueyang Cang*, *Pingge Hu*, *Yuchen He*.
 
 ---
 
@@ -13,6 +13,17 @@ Run setup.sh to quickly create a conda environment that contains the packages ne
 
 ## Datasets
 Annotations, stimulus, EEG(raw and preprocessed) of EEG-Kilogram: https://osf.io/7qm35/
+
+## Pipeline
+1. Finetune: CLIP_finetune_tangram.py/CLIP_finetune_things.py
+   
+2. Train SGDM(stage 1): Train_vae_cogcode.py
+   
+3. Train SGDM stage 2: Available upon the official publication
+
+4. Generation: CognitiveGen.ipynb
+
+4. Eval: Eval_Metrics.ipynb
 
 ## Acknowledge
 1.THING-EEG dataset cited in the paper:
